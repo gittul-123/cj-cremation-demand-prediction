@@ -82,6 +82,15 @@ Python의 Linear Regression을 활용하여 청주시 미래 인구를 추정하
 - 화장로 1기당 연간 처리능력(1,448건)을 기준으로 필요 화장로 수를 산정하였다.
 - 분석 결과, 2035년까지 최대 필요 화장로 수는 6기로 나타났으며 현재 운영 중인 화장로(9기)로도 예측 수요를 충분히 처리할 수 있어 추가 증설은 필요하지 않은 것으로 분석되었다.
 
+### 화장 수요 예측 결과
+
+![화장 수요 예측](processed/cremation_demand_forecast.png)
+
+
+### 필요 화장로 수 산정
+
+![필요 화장로 수](processed/facility_plan.png)
+
 
 ## 7. 분석의 한계
 
@@ -91,24 +100,28 @@ Python의 Linear Regression을 활용하여 청주시 미래 인구를 추정하
 
 
 
+
 ## 8. 프로젝트 구조
 
+```
 py_project
-├ raw
-├ data
-├ processed
-│├ population_processed.csv
-│├ population_forecast.csv
-│├ cremation_demand_forecast.csv
-│├ cremation_analysis_result.csv
-│└ facility_plan.csv
-├ src
-│ ├ 1_population_preprocessing.py
-│ ├ 2_population_model.py
-│ ├ 3_demand_estimation.py
-│ ├ 4_result_analysis.py
-│ └ 5_facility_planning.py
-└ README.md
+├── raw
+├── data
+├── processed
+│   ├── population_processed.csv
+│   ├── population_forecast.csv
+│   ├── cremation_demand_forecast.csv
+│   ├── cremation_analysis_result.csv
+│   ├── facility_plan.csv
+│   └── facility_plan.png
+├── src
+│   ├── 1_population_preprocessing.py
+│   ├── 2_population_model.py
+│   ├── 3_demand_estimation.py
+│   ├── 4_result_analysis.py
+│   └── 5_facility_planning.py
+└── README.md
+```
 
 
 
